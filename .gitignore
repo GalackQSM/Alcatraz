@@ -1,0 +1,9 @@
+# ignore
+*.sqlite*
+logs/*
+data/emojis
+.vscode
+.directory
+
+# do not ignore
+!.gitkeep

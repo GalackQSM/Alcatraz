@@ -1,0 +1,12 @@
+{
+  "token": "Token",
+  "ownerId": "482517667945906177",
+  "footer": "© 2020 - Alcatraz-Bot.com | Projet open-source",
+  "bugReportChannelId": "775898687007359009",
+  "modlogChannelId": "775898687007359009",
+  "feedbackChannelId": "775898687007359009",
+  "apiKeys": {
+    "catApi": "44d2e7c1-e82b-4fba-bec2-e6b07affb71f",
+    "googleApi": "AIzaSyCk09BwA1RxwuvEgKkTWqveGqyPfuCMqUI"
+  }
+}

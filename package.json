@@ -1,0 +1,64 @@
+{
+  "name": "Alcatraz",
+  "version": "1.0.0",
+  "description": "Un bot entièrement personnalisable construit avec discord.js",
+  "main": "Alcatraz.js",
+  "dependencies": {
+    "12": "^1.0.2",
+    "@spyte-corp/discord.js-remove-on-reaction": "^1.0.5",
+    "@vitalets/google-translate-api": "^4.0.0",
+    "aki-api": "^5.2.0",
+    "ascii-table": "0.0.9",
+    "better-sqlite3": "^7.1.1",
+    "bindings": "^1.5.0",
+    "canvacord": "^5.0.8",
+    "common-tags": "^1.8.0",
+    "cron-parser": "^2.17.0",
+    "discord.js": "^12.4.0",
+    "discord.js-commando": "^0.10.0",
+    "figlet": "^1.5.0",
+    "gifencoder": "^2.0.1",
+    "he": "^1.2.0",
+    "html-entities": "^1.3.1",
+    "humanize-duration": "^3.24.0",
+    "jimp": "^0.16.1",
+    "minimist": ">=1.2.2",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "ms": "^2.1.2",
+    "node": "^15.2.0",
+    "node-fetch": "^2.6.1",
+    "node-os-utils": "^1.3.2",
+    "node-pre-gyp": "^0.16.0",
+    "node-schedule": "^1.3.2",
+    "node-superfetch": "^0.1.10",
+    "novelcovid": "^3.0.0",
+    "setimmediate": "^1.0.5",
+    "sqlite": "^4.0.17",
+    "superagent": "^6.1.0",
+    "svg-to-img": "^2.0.9",
+    "user-instagram": "^2.1.8",
+    "weather-js": "^2.0.0",
+    "winston": "^3.3.3",
+    "yaml": "^1.10.0",
+    "youtube-search": "^1.1.4"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^2.3.2",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Alcatraz.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://GalackQSM@github.com/GalackQSM/Alcatraz.git"
+  },
+  "author": "GalackQSM",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/GalackQSM/Alcatraz/issues"
+  },
+  "homepage": "https://github.com/GalackQSM/Alcatraz#readme"
+}
