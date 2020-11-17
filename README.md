@@ -32,8 +32,8 @@ Alcatraz a beaucoup de fonctionnalités, avec **11 catégories principales**:
 *   ⭐ **couleur**: `couleur`, `couleurhasard`, `creecouleur`, `creedefaultcolors`, et **+**! 
 *   🎲 **Fun**: `clyde`, `blague`, `kiss`, `fakeban`, `trumptweet` et **+**! 
 *   🖨️ **Général**: `bienvenue`, `feedback`, `pseudo`, et **+**! 
-*   🖨️ **Jeux**: `8ball`, `coinflip`, `pfc`, et **+**! 
-*   🖨️ **Avatar**: `a-suivre`, `alcatraz-filtre`, `alcatraz-logo`, `psg`, `om`, et **+**! 
+*   🎮 **Jeux**: `8ball`, `coinflip`, `pfc`, et **+**! 
+*   👤 **Avatar**: `a-suivre`, `alcatraz-filtre`, `alcatraz-logo`, `psg`, `om`, et **+**! 
 *   🔞 **Nsfw**: `4k`, `anal`, `gonewild`, `hentai`, `pgif` et **+**! 
 *   🔔 **Info**: `admins`, `avatar`, `invitemoi`, `members`, `saloninfo` et **+**! 
 *   🏆 **Points**: `actionpoints`, `couronne`, `givepoints`, `leaderboard`, `position` et **+**! 
