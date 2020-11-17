@@ -4,6 +4,7 @@
 
 [![](https://img.shields.io/discord/766318515619102730.svg?logo=discord&colorB=7289DA)](https://discord.gg/aGP5kvxFEc)
 [![](https://img.shields.io/badge/discord.js-v12.0.0--dev-blue.svg?logo=npm)](https://discord.js.org/)
+[![](https://img.shields.io/badge/nodejs-14.15.1-green.svg)](https://www.nodejs.org)
 [![](https://img.shields.io/badge/patreon-donation-orange.svg)](https://www.patreon.com/AlcatrazBot)
 [![](https://www.codefactor.io/repository/gitlab/galackqsm/alcatraz/badge)](https://www.codefactor.io/repository/gitlab/galackqsm/Alcatraz)
 
