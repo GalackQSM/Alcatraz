@@ -17,7 +17,7 @@ module.exports = async (client) => {
   
   const activities = [
     { name: 'Alcatraz | Projet Open-Source', type: 'PLAYING' }, 
-    { name: `Je suis dans ${client.guilds.cache.size} serveurs avec ${client.users.cache.size} membres`, type: 'LISTENING' }
+    { name: `Je suis dans ${client.guilds.cache.size} serveurs avec ${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)} membres membres`, type: 'LISTENING' }
   ];
 
   client.user.setPresence({ status: 'online', activity: activities[0] });
@@ -26,7 +26,7 @@ module.exports = async (client) => {
 
   setInterval(() => {
     activities[2] = { name: `${client.guilds.cache.size} serveurs`, type: 'WATCHING' }; // Update server count
-    activities[3] = { name: `${client.users.cache.size} membres`, type: 'WATCHING' }; // Update user count
+    activities[3] = { name: `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)} membres membres`, type: 'WATCHING' }; // Update user count
     if (activity > 3) activity = 0;
     client.user.setActivity(activities[activity]);
     activity++;
