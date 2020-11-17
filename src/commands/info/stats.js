@@ -37,13 +37,14 @@ module.exports = class StatsCommand extends Command {
     const d = moment.duration(message.client.uptime);
     const days = (d.days() == 1) ? `${d.days()} jour` : `${d.days()} jours`;
     const hours = (d.hours() == 1) ? `${d.hours()} heure` : `${d.hours()} heures`;
+    const seconds = (d.seconds() == 1) ? `${d.seconds()} seconde` : `${d.seconds()} secondes`;
     const donateurStats = stripIndent`
       \`• GalackQSM#0895\`
       \`• Vide\`
     `;
     const clientStats = stripIndent`
       **• Serveurs:** ${message.client.guilds.cache.size}
-      **• Membres:** ${message.client.users.cache.size}
+      **• Membres:** ${message.client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)}
       **• Salons:** ${message.client.channels.cache.size}
       **• Emojis:** ${message.client.emojis.cache.size}
       **• Ping:** ${Math.round(message.client.ws.ping)}ms
