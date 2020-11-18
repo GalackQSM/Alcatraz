@@ -59,7 +59,7 @@ module.exports = class SlowmodeCommand extends Command {
     if (reason.length > 1024) reason = reason.slice(0, 1021) + '...';
     
     await channel.setRateLimitPerUser(rate, reason);
-    const status = (channel.rateLimitPerUser) ? 'activé' : 'désactivé';
+    const status = (channel.rateLimitPerUser) ? 'non actif' : 'actif';
     const embed = new MessageEmbed()
       .setTitle('Commande Slowmode')
       .setFooter(config.footer)
@@ -68,7 +68,7 @@ module.exports = class SlowmodeCommand extends Command {
 
     if (rate === '0') {
       message.channel.send(embed
-        .setDescription(`\`${status}\` ➔ \`désactivé\``)
+        .setDescription(`\`${status}\` ➔ \`non actif\``)
         .addField('Par', message.member, true)
         .addField('Salon', channel, true)
         .addField('Raison', reason)
@@ -77,7 +77,7 @@ module.exports = class SlowmodeCommand extends Command {
     } else {
 
       message.channel.send(embed
-        .setDescription(`\`${status}\` ➔ \`activé\``)
+        .setDescription(`\`${status}\` ➔ \`actif\``)
         .addField('Par', message.member, true)
         .addField('Salon', channel, true)
         .addField('Temps', `\`${rate}\` seconde(s)`, true)
