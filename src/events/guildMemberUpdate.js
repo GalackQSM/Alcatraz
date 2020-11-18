@@ -7,9 +7,7 @@ module.exports = (client, oldMember, newMember) => {
     .setTimestamp()
     .setColor(oldMember.guild.me.displayHexColor);
 
-  // Nickname change
   if (oldMember.nickname != newMember.nickname) {
-    // Get nickname log
     const nicknameLogId = client.db.settings.selectNicknameLogId.pluck().get(oldMember.guild.id);
     const nicknameLog = oldMember.guild.channels.cache.get(nicknameLogId);
     if (
@@ -17,19 +15,17 @@ module.exports = (client, oldMember, newMember) => {
       nicknameLog.viewable &&
       nicknameLog.permissionsFor(oldMember.guild.me).has(['SEND_MESSAGES', 'EMBED_LINKS'])
     ) {
-      const oldNickname = oldMember.nickname || '`None`';
-      const newNickname = newMember.nickname || '`None`';
+      const oldNickname = oldMember.nickname || '`Aucun`';
+      const newNickname = newMember.nickname || '`Aucun`';
       embed
-        .setTitle('Member Update: `Nickname`')
-        .setDescription(`${newMember}'s **nickname** was changed.`)
-        .addField('Nickname', `${oldNickname} ➔ ${newNickname}`);
+        .setTitle('Mise à jour des membres: `Pseudo`')
+        .setDescription(`${newMember} ton surnom a été modifié.`)
+        .addField('Surnom', `${oldNickname} ➔ ${newNickname}`);
       nicknameLog.send(embed);
     }
   }
 
-  // Role add
   if (oldMember.roles.cache.size < newMember.roles.cache.size) {
-    // Get role log
     const roleLogId = client.db.settings.selectRoleLogId.pluck().get(oldMember.guild.id);
     const roleLog = oldMember.guild.channels.cache.get(roleLogId);
     if (
@@ -39,8 +35,8 @@ module.exports = (client, oldMember, newMember) => {
     ) {
       const role = newMember.roles.cache.difference(oldMember.roles.cache).first();
       embed
-        .setTitle('Member Update: `Role Add`')
-        .setDescription(`${newMember} was **given** the ${role} role.`);
+        .setTitle('Mise à jour des membres: `Rôle ajouter`')
+        .setDescription(`${newMember} as reçu le rôle ${role}.`);
       roleLog.send(embed);
     }
   }
@@ -57,8 +53,8 @@ module.exports = (client, oldMember, newMember) => {
     ) {
       const role = oldMember.roles.cache.difference(newMember.roles.cache).first();
       embed
-        .setTitle('Member Update: `Role Remove`')
-        .setDescription(`${newMember} was **removed** from ${role} role.`);
+        .setTitle('Mise à jour des membres: `Rôle supprimer`')
+        .setDescription(`${newMember} as perdu le rôle ${role}.`);
       roleLog.send(embed);
     }
   }
