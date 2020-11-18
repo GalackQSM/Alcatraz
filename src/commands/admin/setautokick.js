@@ -35,7 +35,7 @@ module.exports = class SetAutoKickCommand extends Command {
   }
   run(message, args) {
 
-    const autoKick = message.client.db.settings.selectAutoKick.pluck().get(message.guild.id) || 'désactivé';
+    const autoKick = message.client.db.settings.selectAutoKick.pluck().get(message.guild.id) || 'non actif';
     const amount = args[0];
     if (amount && (!Number.isInteger(Number(amount)) || amount < 0)) 
       return this.sendErrorMessage(message, 'Argument invalide. Veuillez saisir un nombre positif.');
@@ -43,14 +43,14 @@ module.exports = class SetAutoKickCommand extends Command {
     const embed = new MessageEmbed()
       .setTitle('Paramètres: `Auto Kick`')
       .setThumbnail(message.guild.iconURL({ dynamic: true }))
-      .setDescription('`L\'auto kick` a été mis à jour avec succès. <:valider:774806924712476674>')
+      .setDescription('`L\'auto kick` a été mis à jour avec succès. <:alcatraz_valider:776109858948120636>')
       .setFooter(config.footer)
       .setTimestamp()
       .setColor("#2f3136");
 
     if (args.length === 0 || amount == 0) {
       message.client.db.settings.updateAutoKick.run(null, message.guild.id);
-      return message.channel.send(embed.addField('Statut', `\`${autoKick}\` ➔ \`désactivé\``));
+      return message.channel.send(embed.addField('Statut', `\`${autoKick}\` ➔ \`non actif\``));
     }
 
     message.client.db.settings.updateAutoKick.run(amount, message.guild.id);
