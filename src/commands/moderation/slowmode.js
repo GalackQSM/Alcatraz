@@ -80,11 +80,11 @@ module.exports = class SlowmodeCommand extends Command {
         .setDescription(`\`${status}\` ➔ \`actif\``)
         .addField('Par', message.member, true)
         .addField('Salon', channel, true)
-        .addField('Temps', `\`${rate}\` seconde(s)`, true)
+        .addField('Temps', `\`${rate} seconde(s)\``, true)
         .addField('Raison', reason)
       );
     }
 
-    this.sendModLogMessage(message, reason, { Channel: channel, Rate: `\`${rate}\`` });
+    this.sendModLogMessage(message, reason, { Salon: channel, Temps: `\`${rate} seconde(s)\`` });
   }
 };
