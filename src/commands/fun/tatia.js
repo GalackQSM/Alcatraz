@@ -23,7 +23,7 @@ registerFont(path.join(__dirname, '..', '..', 'assets', 'font', 'girly.ttf'), { 
 const emojis = require('../../utils/emojis.json');
 const config = require('../../../config.json');
 
-module.exports = class DediBoobsCommand extends Command {
+module.exports = class TatiaCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'tatia',
