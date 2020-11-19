@@ -23,7 +23,7 @@ module.exports = class LockCommand extends Command {
       description: 'Permet de bloquée le salon.',
       type: client.types.MOD,
       clientPermissions: ['SEND_MESSAGES', 'EMBED_LINKS', 'BAN_MEMBERS'],
-      userPermissions: ['BAN_MEMBERS'],
+      userPermissions: ['MANAGE_CHANNELS'],
       examples: ['lock activer']
         })
     }
