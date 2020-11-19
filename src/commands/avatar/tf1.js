@@ -26,7 +26,7 @@ module.exports = class TF1Command extends Command {
         super(client, {
             name: 'tf1',
             type: client.types.AVATAR,
-            description: 'Avoir le profil discord avec beaucoup de badge.',
+            description: 'Passer sur le journal de TF1.',
             throttling: {
                 usages: 1,
                 duration: 10
