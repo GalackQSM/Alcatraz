@@ -31,12 +31,12 @@ module.exports = async (client, guild) => {
     guild.roles.cache.find(r => r.name.toLowerCase() === 'admin' || r.name.toLowerCase() === 'administrator');
   const modRole = guild.roles.cache.find(r => r.name.toLowerCase() === 'mod' || r.name.toLowerCase() === 'moderator');
 
-  let muteRole = guild.roles.cache.find(r => r.name.toLowerCase() === 'muted');
+  let muteRole = guild.roles.cache.find(r => r.name.toLowerCase() === 'Mute');
   if (!muteRole) {
     try {
       muteRole = await guild.roles.create({
         data: {
-          name: 'Muted',
+          name: 'Mute',
           permissions: []
         }
       });
@@ -63,12 +63,12 @@ module.exports = async (client, guild) => {
     }
   }
   
-  let crownRole = guild.roles.cache.find(r => r.name === 'The Crown');
+  let crownRole = guild.roles.cache.find(r => r.name === 'Meilleur membre');
   if (!crownRole) {
     try {
       crownRole = await guild.roles.create({
         data: {
-          name: 'The Crown',
+          name: 'Meilleur membre',
           permissions: [],
           hoist: true
         }
@@ -102,32 +102,5 @@ module.exports = async (client, guild) => {
       member.bot ? 1 : 0
     );
   });
-
-  let position = 1;
-  for (let [key, value] of Object.entries(colors)){
-    key = '#' + key;
-    if (!guild.roles.cache.find(r => r.name === key)) {
-      try {
-        await guild.roles.create({
-          data: {
-            name: key,
-            color: value,
-            position: position,
-            permissions: []
-          }
-        });
-        position++;
-      } catch (err) {
-        client.logger.error(err.message);
-      }
-    }
-  }
-
-  try {
-    const AlcatrazCouleur = guild.roles.cache.find(r => r.name === '#Seagrass');
-    if (AlcatrazCouleur) await guild.me.roles.add(AlcatrazCouleur);
-  } catch (err) {
-    client.logger.error(err.message);
-  }
   
 };
