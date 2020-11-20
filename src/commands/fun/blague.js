@@ -35,7 +35,7 @@ module.exports = class Joke extends Command {
   async run (message, args, data) {
 
     {
-        var headers = { Authorization: "PHKgOQejoFh7ipfmOrzji9sRJkOEDd28M0IY6-klwjFojtkMFtfirTl.d4a3.Z--" }
+        var headers = { Authorization: config.blague-api }
         fetch('https://blague.xyz/api/joke/random/', { headers: headers }  )
         .then(rep => rep.json() )
         .then(json => {
