@@ -22,10 +22,8 @@ module.exports = class CovidCommand extends Command {
   constructor(client) {
     super(client, {
       name: 'covid',
-      usage: 'userinfo [@membre/ID]',
-      description: 'Récupère les informations d\'un membre. Si aucun utilisateur n\'est indiqué, vos propres informations seront affichées.',
-      type: client.types.INFO,
-      examples: ['userinfo @Alcatraz']
+      description: 'Savoir les statistiques du Covid-19.',
+      type: client.types.GENERAL
     });
   }
 
