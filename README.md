@@ -44,7 +44,7 @@ Alcatraz a beaucoup de fonctionnalités, avec **11 catégories principales**:
 * 2- Ouvrez le dossier `alcatraz-master` et crée un dossier `data`.
 * 3- Ouvrez la racine de votre dossier avec CMD
 * 4- Faite la commande `yarn install`.
-* 5- Allez dans le fichier `config.jon` et le remplir.
+* 5- Allez dans le fichier `config.json` et le remplir.
 * 6- Après faite dans le CMD `npm start`.
 
 * PS: Si vous avez des erreurs d'installation, télécharger [Visual Studio Community](https://visualstudio.microsoft.com/fr/vs/community/) et cocher cette case pendant l'installation [Screen](https://i.imgur.com/KTqnSxo.png) et refaire `npm start` et le tour est jouer
