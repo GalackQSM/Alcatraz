@@ -1,0 +1,27 @@
+{
+  "ownerId": "Ton ID",
+
+  "token": "Le token de ton bot",
+  "BotID": "ID de ton Bot",
+  "version": "2.7.0",
+  "NomBot": "Alcatraz",
+  "footer": "© 2020 - Alcatraz-Bot.com | Projet open-source",
+
+  "Topgg": "Cle api pour https://top.gg",
+  "BOATS": "Cle api pour https://discord.boats",
+  "VoidBots": "Cle api pour https://voidbots.net",
+  "SpaceBotList": "Cle api pour https://space-bot-list.xyz",
+  "InfinityBotList": "Cle api pour https://infinitybotlist.com",
+
+  "ANTI_INSULTE" : ["putin", "fdp", "enculer", "fils de pute", "salope", "ntm", "nique ta mere", "connard", "batard", "sale noir", "baise ta mere", "mange tes morts", "ta gueule", "bâtard", "nique ta mère"],
+
+  "NomServeur": "Alcatraz Empire",
+  "Support": "https://discord.gg/aGP5kvxFEc",
+  "bugReportChannelId": "774665169535369239",
+  "modlogChannelId": "775135829562490880",
+  "feedbackChannelId": "774665143128162345",
+  "apiKeys": {
+    "catApi": "44d2e7c1-e82b-4fba-bec2-e6b07affb71f",
+    "googleApi": "AIzaSyCk09BwA1RxwuvEgKkTWqveGqyPfuCMqUI"
+  }
+}
