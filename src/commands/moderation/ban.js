@@ -46,13 +46,17 @@ module.exports = class BanCommand extends Command {
     if (reason.length > 1024) reason = reason.slice(0, 1021) + '...';
     
     await member.ban({ Raison: reason });
-
+        const banni = [
+            `https://media1.tenor.com/images/d856e0e0055af0d726ed9e472a3e9737/tenor.gif?itemid=8540509`,
+            `https://media1.tenor.com/images/e72cac5d0e755aca7d78ed19ac34cc9a/tenor.gif?itemid=18033317`,
+            `https://thumbs.gfycat.com/ConfusedDiligentIvorygull-size_restricted.gif`,
+            `https://i.pinimg.com/originals/f4/2b/fb/f42bfb762f9c4bad9428facae3363f78.gif`,
+            `https://thumbs.gfycat.com/UnselfishColdErne-size_restricted.gif`
+        ]
     const embed = new MessageEmbed()
       .setTitle('Un membre viens d\'être banni')
-      .setDescription(`Le membre **${member}** a été banni avec succès.`)
-      .addField('Par', message.member, true)
-      .addField('Membre', member, true)
-      .addField('Raison', reason)
+      .setDescription(`Le membre **${member}** a été banni avec succès.\n\n**Par:** ${message.member}\n**Membre kick:** ${member}\n**Pour la raison:** ${reason}`)
+      .setImage(banni[Math.floor(Math.random() * banni.length)])
       .setFooter(config.footer)
       .setTimestamp()
       .setColor("#2f3136");
