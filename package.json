@@ -1,6 +1,6 @@
 {
   "name": "Alcatraz",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "description": "Un bot entièrement personnalisable construit avec discord.js par GalackQSM",
   "main": "Alcatraz.js",
   "dependencies": {
