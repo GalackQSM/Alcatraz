@@ -46,13 +46,16 @@ module.exports = class KickCommand extends Command {
     if (reason.length > 1024) reason = reason.slice(0, 1021) + '...';
 
     await member.kick(reason);
-
+        const kick = [
+            `https://media4.giphy.com/media/3xz2BHM2zwM3mFfYgo/giphy.gif`,
+            `https://www.reactiongifs.com/r/2011/08/gtfo.gif`,
+            `https://media.melty.fr/article-4076200-raw/media.gif`,
+            `https://media2.giphy.com/media/l3V0j3ytFyGHqiV7W/giphy.gif`
+        ]
     const embed = new MessageEmbed()
       .setTitle('Un membre viens d\'être kick')
-      .setDescription(`Le membre **${member}** a été kick avec succès.`)
-      .addField('Par', message.member, true)
-      .addField('Membre', member, true)
-      .addField('Raison', reason)
+      .setDescription(`Le membre **${member}** a été kick avec succès.\n\n**Par:** ${message.member}\n**Membre kick:** ${member}\n**Pour la raison:** ${reason}`)
+      .setImage(kick[Math.floor(Math.random() * kick.length)])
       .setFooter(config.footer)
       .setTimestamp()
       .setColor("#2f3136");
