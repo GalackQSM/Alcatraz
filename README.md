@@ -65,9 +65,9 @@ Alcatraz a beaucoup de fonctionnalités, avec **12 catégories principales**:
 
 ## Lien utiles
 
-*   [Discord](https://discord.gg/aGP5kvxFEc)
+*   [Discord](https://discord.gg/bp5ANG326t)
 *   [Github](https://github.com/GalackQSM/Alcatraz)
 *   [Donation](https://www.patreon.com/AlcatrazBot)
-*   [Avis](https://fr.trustpilot.com/review/alcatraz-bot.com)
+
 
 
