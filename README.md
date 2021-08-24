@@ -2,7 +2,7 @@
 
 # Alcatraz
 
-[![](https://img.shields.io/discord/766318515619102730.svg?logo=discord&colorB=7289DA)](https://discord.gg/aGP5kvxFEc)
+[![](https://img.shields.io/discord/876540658838569011.svg?logo=discord&colorB=7289DA)](https://discord.gg/bp5ANG326t)
 [![](https://img.shields.io/badge/discord.js-v12.4.1-blue.svg?logo=npm)](https://discord.js.org/)
 [![](https://img.shields.io/badge/nodejs-14.15.0-green.svg)](https://www.nodejs.org)
 [![](https://img.shields.io/badge/patreon-donation-orange.svg)](https://www.patreon.com/AlcatrazBot)
