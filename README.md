@@ -1,6 +1,6 @@
 <img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="Alcatraz" src="https://i.imgur.com/cZkBm9I.png">  
 
-# Alcatraz version 2.0.8 - V3 comming soon 
+# Alcatraz version 2.8.0 - V3 comming soon 
 
 [![](https://img.shields.io/discord/876540658838569011.svg?logo=discord&colorB=7289DA)](https://discord.gg/bp5ANG326t)
 [![](https://img.shields.io/badge/discord.js-v12.4.1-blue.svg?logo=npm)](https://discord.js.org/)
